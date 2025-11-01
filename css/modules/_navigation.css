@@ -1,0 +1,100 @@
+/*
+ * _navigation.css - Estilos para navegação principal e mobile
+ */
+
+.header {
+    background-color: var(--color-white);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky; /* Para manter o cabeçalho visível */
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-sm) var(--spacing-sm);
+}
+
+.logo h1 {
+    font-size: var(--font-size-xl);
+    margin-bottom: 0;
+}
+
+.logo .tagline {
+    display: block;
+    margin-top: -5px;
+}
+
+.nav-menu {
+    display: flex;
+    gap: var(--spacing-md);
+}
+
+.nav-menu a {
+    padding: var(--spacing-xs) 0;
+    display: block;
+    font-weight: 500;
+    color: var(--color-neutral-dark);
+    position: relative;
+}
+
+.nav-menu a.active,
+.nav-menu a:hover {
+    color: var(--color-primary);
+}
+
+.nav-menu a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-primary);
+    transition: width 0.3s ease;
+}
+
+.nav-menu a:hover::after,
+.nav-menu a.active::after {
+    width: 100%;
+}
+
+/* --- Menu Dropdown (Simulação, precisa de HTML adicional) --- */
+/* Exemplo de estrutura: <li><a href="#">Projetos</a><ul class="dropdown-menu">...</ul></li> */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: var(--color-white);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    min-width: 150px;
+    z-index: 10;
+    padding: var(--spacing-xs) 0;
+    border-radius: 5px;
+}
+
+.nav-menu li:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    margin: 0;
+}
+
+.dropdown-menu a {
+    padding: var(--spacing-xs) var(--spacing-sm);
+    white-space: nowrap;
+}
+
+/* --- Menu Mobile (Hambúrguer) --- */
+.menu-toggle {
+    display: none; /* Escondido por padrão em telas grandes */
+    background: none;
+    border: none;
+    font-size: var(--font-size-xl);
+    cursor: pointer;
+    color: var(--color-neutral-dark);
+}
+
+/* Estilos mobile serão definidos em _responsive.css */

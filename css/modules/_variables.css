@@ -1,0 +1,43 @@
+/*
+ * Variáveis CSS para o Design System
+ * Define cores, tipografia e espaçamento de forma modular.
+ */
+
+:root {
+    /* --- Cores --- */
+    --color-primary: #007bff; /* Azul vibrante para ações principais */
+    --color-primary-dark: #0056b3;
+    --color-secondary: #28a745; /* Verde para sucesso e destaque */
+    --color-secondary-dark: #1e7e34;
+    --color-tertiary: #ffc107; /* Amarelo para alertas e terceiras ações */
+    --color-neutral-dark: #343a40; /* Texto principal e fundo escuro */
+    --color-neutral-light: #f8f9fa; /* Fundo claro */
+    --color-white: #ffffff; /* Branco */
+
+    /* --- Tipografia --- */
+    --font-family-primary: 'Arial', sans-serif;
+    --font-family-secondary: 'Georgia', serif;
+
+    --font-size-xs: 0.75rem; /* 12px */
+    --font-size-sm: 0.875rem; /* 14px */
+    --font-size-base: 1rem; /* 16px */
+    --font-size-lg: 1.25rem; /* 20px */
+    --font-size-xl: 1.5rem; /* 24px */
+    --font-size-2xl: 2rem; /* 32px */
+    --font-size-3xl: 3rem; /* 48px */
+
+    /* --- Espaçamento Modular (Base 8px) --- */
+    --spacing-xs: 0.5rem; /* 8px */
+    --spacing-sm: 1rem; /* 16px */
+    --spacing-md: 1.5rem; /* 24px */
+    --spacing-lg: 2rem; /* 32px */
+    --spacing-xl: 3rem; /* 48px */
+    --spacing-2xl: 4rem; /* 64px */
+
+    /* --- Breakpoints (5 definidos) --- */
+    --breakpoint-xs: 480px;
+    --breakpoint-sm: 640px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 1024px;
+    --breakpoint-xl: 1280px;
+}

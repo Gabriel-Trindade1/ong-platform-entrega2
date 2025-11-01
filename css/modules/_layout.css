@@ -1,0 +1,121 @@
+/*
+ * _layout.css - Estilos de layout com Grid e Flexbox
+ */
+
+/* --- CSS Grid para Estrutura Geral --- */
+/* Aplicado ao container principal (main) ou body se necessário */
+/* Para este projeto, vamos aplicar o Grid em seções específicas */
+
+/* Sistema de Grid Customizado (12 colunas) */
+.grid-12-cols {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: var(--spacing-md); /* 24px de gap */
+}
+
+/* --- Flexbox para Componentes Internos --- */
+.flex-group {
+    display: flex;
+    gap: var(--spacing-sm);
+    align-items: center;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* --- Layout da Seção Hero --- */
+.hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 400px;
+}
+
+.hero-content {
+    flex: 1;
+    padding-right: var(--spacing-xl);
+}
+
+.hero-image {
+    max-width: 45%;
+    height: auto;
+    border-radius: var(--spacing-xs);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Layout da Seção Sobre (About) --- */
+.about-content {
+    display: flex;
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+}
+
+.about-item {
+    flex: 1;
+    padding: var(--spacing-sm);
+    border-left: 3px solid var(--color-primary);
+}
+
+/* --- Layout da Seção Estatísticas --- */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-md);
+    text-align: center;
+}
+
+.stat-number {
+    font-size: var(--font-size-3xl);
+    font-weight: bold;
+    color: var(--color-primary);
+    display: block;
+}
+
+/* --- Layout da Seção Projetos em Destaque (Cards) --- */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+}
+
+/* --- Layout do Rodapé --- */
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--spacing-xl);
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    color: var(--color-tertiary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section li {
+    margin-bottom: var(--spacing-xs);
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    margin-right: var(--spacing-xs);
+    font-weight: bold;
+}

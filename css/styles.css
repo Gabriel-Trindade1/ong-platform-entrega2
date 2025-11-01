@@ -1,0 +1,64 @@
+/*
+ * styles.css - Folha de estilos principal
+ * Importa variáveis e define estilos globais e de layout.
+ */
+
+@import url("modules/_variables.css");
+@import url("modules/_reset.css");
+@import url("modules/_typography.css");
+@import url("modules/_layout.css");
+@import url("modules/_components.css");
+@import url("modules/_navigation.css");
+@import url("modules/_responsive.css");
+
+/* Estilos Globais */
+body {
+    font-family: var(--font-family-primary);
+    font-size: var(--font-size-base);
+    line-height: 1.6;
+    color: var(--color-neutral-dark);
+    background-color: var(--color-neutral-light);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-sm); /* 16px de padding lateral */
+}
+
+/* Estilos para o Main */
+main {
+    padding-top: 80px; /* Espaço para o cabeçalho fixo, se for o caso */
+}
+
+section {
+    padding: var(--spacing-2xl) 0; /* 64px de padding vertical */
+}
+
+section:nth-child(even) {
+    background-color: var(--color-white);
+}
+
+/* Estilos para o Rodapé */
+.footer {
+    background-color: var(--color-neutral-dark);
+    color: var(--color-neutral-light);
+    padding: var(--spacing-xl) 0 var(--spacing-sm) 0;
+}
+
+.footer a {
+    color: var(--color-neutral-light);
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: var(--spacing-sm);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: var(--spacing-md);
+}
