@@ -18,15 +18,6 @@ Este repositório contém a segunda entrega do projeto de desenvolvimento web, f
 ## Requisitos
 Para visualizar o projeto, basta abrir o arquivo `index.html` em qualquer navegador moderno.
 
-## Instruções de Execução
-1. Clone o repositório: `git clone [URL_DO_REPOSITORIO]`
-2. Navegue até a pasta do projeto: `cd ong-platform-entrega2`
-3. Abra o arquivo `index.html` no seu navegador.
 
-## Contexto Acadêmico
-**Disciplina:** [Nome da Disciplina]
-**Professor:** [Nome do Professor]
-**Entrega:** Estilização e Leiautes (Entrega II)
 
-## Autor
-Gabriel Trindade
+
